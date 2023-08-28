@@ -1,0 +1,17 @@
+{
+  "name": "tarea1_sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "styles": "sass src:assets --no-source-map",
+    "styles:dev": "sass src:assets --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}
