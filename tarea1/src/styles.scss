@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $secondary-color;
+}
+
+.gallery {
+  width: 100%;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: $primary-color;
+  color: white;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $primary-color;
+  
+    > li {
+      float: left;
+  
+      > a {
+        @include flex-center;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+  
+        &:hover {
+          background-color: darken-color($primary-color, 20%);
+        }
+  
+        img {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 2px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+.gallery > img {
+  width: 25%;
+  height: 420px; 
+  object-fit: cover;
+  float: left;
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  border-top: solid 1px gray;
+  width: 100%;
+}
+
+@include mobile {
+    .gallery > img {
+        width: 100%;
+    }
+}
+
+@include desktop {
+    .gallery > img {
+        width: 50%;
+    }
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: left;
+}

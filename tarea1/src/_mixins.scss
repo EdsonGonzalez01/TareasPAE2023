@@ -1,0 +1,20 @@
+$small-size: 450px;
+$large-size: 1000px;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+@mixin mobile {
+    @media screen and (max-width: $small-size) {
+        @content;
+    }
+}
+  
+@mixin desktop {
+    @media screen and (min-width: $small-size) and (max-width: $large-size) {
+        @content;
+    }
+}

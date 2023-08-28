@@ -1,0 +1,3 @@
+@function darken-color($color, $amount) {
+    @return mix(rgb(236, 215, 215), $color, $amount);
+  }
