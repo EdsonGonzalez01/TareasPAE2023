@@ -1,6 +1,6 @@
 # Tarea2
 
-Entregable de la tarea2 de PAE
+Aplicación web mediante Node + Express utilizando Bootstrap que permite al usuario buscar y listar noticias a través de la API de https://newsapi.org/ 
 
 ## ¿Como correr la tarea?
 
