@@ -1,0 +1,10 @@
+<h2>Lista de Usuarios</h2>
+<input type="text" [(ngModel)]="selectedUser.name">
+<div class="panels">
+    <div>
+        <app-users-list [currentUser]="selectedUser" (onUserSelected)="doOnUserSelected($event)"></app-users-list>
+    </div>
+    <div>
+        <app-user-data (onUserReset)="doOnUserReset()" [data]="selectedUser"></app-user-data>
+    </div>
+</div>
